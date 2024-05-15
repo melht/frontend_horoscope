@@ -9,7 +9,8 @@ const EditUser = () => {
   const [isLoading, setIsLoading] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
-  const getUserApi = "http://localhost:8000/api/users/";
+  /*const getUserApi = "http://localhost:8000/api/users/";*/
+  const getUserApi = "https://api-horoscopes.azurewebsites.net/api/users"
 
   useEffect(() => {
     getUser();

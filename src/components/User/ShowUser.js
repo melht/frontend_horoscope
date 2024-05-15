@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import Loader from "../Common/Loader";
 
 const ShowUser = () => {
-  const showUserApi = "http://localhost:8000/api/users/";
+  /*const showUserApi = "http://localhost:8000/api/users/";*/
+  const showUserApi = "https://api-horoscopes.azurewebsites.net/api/users";
 
   const [user, setUser] = useState([]);
   const [isLoading, setIsLoading] = useState(false);

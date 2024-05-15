@@ -5,7 +5,8 @@ import "./User.css";
 const EditUser = () => {
   const [user, setUser] = useState([]);
   const { id } = useParams();
-  const getUserApi = "http://localhost:8000/api/users/";
+  /*const getUserApi = "http://localhost:8000/api/users/";*/
+  const getUserApi = "https://api-horoscopes.azurewebsites.net/api/users";
 
   useEffect(() => {
     getUser();
